@@ -19,7 +19,7 @@ const deleteTodo = () => {
 }
 </script>
 
-<div class="bg-slate-800 my-4 px-8 py-4 rounded-md flex item-baseline justify-between">
+<div class="bg-neutral-300 dark:bg-neutral-800 my-4 px-8 py-4 rounded-md flex item-baseline justify-between">
 	<p class="text-xl">{content}</p>
 	<button on:click={deleteTodo} class="px-6 py-1">&#9587;</button>
 </div>
