@@ -4,9 +4,13 @@ import { todos } from "$lib/stores/todos.js";
 let todoContent = "";
 
 const addTodo = () => {
+	const trimmedContent = todoContent.trim();
+
+	if (!trimmedContent) return
+
 	const newTodo = {
 		"id": Date.now(),
-		"content": todoContent
+		"content": trimmedContent
 	};
 
 	$todos.unshift(newTodo);
